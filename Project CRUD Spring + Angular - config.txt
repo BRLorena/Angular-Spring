@@ -1,0 +1,14 @@
+Project CRUD Spring + Angular - config
+
+1. Instalar node, ultima versão
+2. Install angular cli: npm install -g @angular/cli
+3. Criar projeto: ng new "nome do projeto" 
+----------------------------------------------
+
+1. Overview do projeto
+2. Add Angular Material (https://material.angular.io/) - ng add @angular/material
+3. Run project in browser (open project folder and ng serve)
+** angular.json (config do projeto)
+  ** outputpath (onde o projeto ficara para ser lançado)
+** package.json (config do Angular)
+** package-lock.json (config do Node)
