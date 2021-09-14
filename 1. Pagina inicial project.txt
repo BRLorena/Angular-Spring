@@ -4,5 +4,4 @@ Para utilizar os componentes do Material temos de fazer import do modulos.
 - No site do MAterial após selecionar um elemento click em API e copy o import.
 ex: import {MatToolbarModule} from '@angular/material/toolbar';
 * add import ao app.module.ts e inserir dentro do array imports
-
-1. Toolbar
+Add code html toolbar

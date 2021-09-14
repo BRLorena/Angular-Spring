@@ -1,0 +1,15 @@
+2.Criando o Módulo de Cursos e Usando Roteamento com Lazy Loading
+
+1. Criar primeiro modulo e roteamento : ng g m "nome do modulo" --routing
+ex: ng g m courses --routing
+2. Criar component dentro de courses: ng g c courses/courses 
+3. Add Obj path na variavel routes  {path: '', component: CoursesComponent}
+4. Criar rotas no app-routing.module.ts (principal) { path: '', pathMatch:'full', redirectTo: 'courses'}
+** pathMatch para garantir que irá para a rota correta
+5. Criar um Lazy loading no app-routing.module.ts
+{ path: 'courses',
+    loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule)
+  }
+6. Informar onde desejamos renderizar a nossa rota 
+* abrir app.component.html e add a rota
+** add: <router-outlet></router-outlet>
